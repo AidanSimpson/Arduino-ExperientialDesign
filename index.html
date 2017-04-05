@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en"><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Canadian Artists - Arduino</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+	<link rel="shortcut icon" href="images/favicon.png"> 
+    <script src="js/vendor/modernizr.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  </head>
+  <body>
+
+  <div class="mainBGImg">
+      <img id="songCover" src="images/Main_BG.jpg" alt="Artist Concert"/>
+  </div>
+
+    <div class="small-12 small-centered large-6 large-uncentered column">
+      <img id="songCover" src="images/Canada_150_Logo.png" alt="Canada 150 Logo"/>
+    </div>
+  
+    <div class="row">
+      <div id="mainContent" class="small-12 small-centered large-6 large-uncentered columns">
+
+            <h3 id="artistTitle">Artists of Canada</h3>
+
+            <p id="artistInfo">The music of Canada has reflected the diverse influences that have shaped the country. Aboriginals, the Irish, British, and the French have all made unique contributions to the musical heritage of Canada. Celebrate the 150th anniversary of Canada with us by going through some of our most iconic artists.</p>
+            <p>When you are detected, a green checkmark icon will show up. If you are not detected, a red cross icon will appear. When detected, swipe RIGHT to move to the next artist and Swipe LEFT to go to a previous artist.</p>
+
+            <p id="songTitle"></p>
+            <p id="albumTitle"></p>
+            
+            <section id="audioControls">
+            <h2 class="hideMe">Artist Music PLayer Controls</h2>
+            <div class="row">
+
+            <div class="small-12 small-centered large-2 medium-uncentered columns">
+            	<button id="playButton"><img id="playButImage" src="images/playButton.svg" alt="Pause"></button>
+            </div>
+
+            <!-- <div class="small-12 small-centered medium-6 medium-uncentered columns">
+                <button type="submit"  name="image" id="backButton"><img id="backBtnImage" src="images/backButton.svg" alt="Back Button"></button>
+            	<button type="submit" name="image" id="forwardButton"><img id="forwardBtnImage" src="images/forwardButton.svg" alt="Forward Button"></button>
+            </div> -->
+
+            <div class="small-12 small-centered large-10 large-uncentered songText columns">     
+                <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span> 
+            </div>
+            </div>
+            
+            <audio id="allAudioFiles">
+                <source src="audio/Track_1.mp3" type="audio/mp3">
+                <source src="audio/Track_1.ogg" type="audio/ogg"/>
+            </audio>
+            </section>
+      </div>
+    </div>
+
+    <div class="bottomBar"><!--start Botton Bar-->
+    <h3 class="hideMe">Main Footer Content</h3>
+
+        <div class="small-5 small-uncentered showHideBtn columns">
+            <button id="showHide">Hide Controls</button>
+        </div>
+        <div class="small-4 small-uncentered refreshBtn columns">
+            <button id="refreshBtn">Refresh Page</button>
+            <!-- <input type="button" value="Refresh Page" id="refreshBtn"> -->
+        </div>
+
+        <div id="detected" class="small-2 small-uncentered columns">
+            <p>Detected:</p>
+        </div>
+        <div id="detect" class="small-1 small-uncentered columns">
+            <img id="detectImg" src="images/cross.svg" alt="Detection">
+        </div>
+    </div><!--end Bottom Bar-->
+
+    <script src="http://cdn.zigfu.com/zigjs/zig.min.js"></script> 
+    <script src="js/main.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*General Styles____________________*/
+.row 
+{
+  min-width: 100% !important; 
+}
+
+body
+{
+	background-color: #000000 !important;
+	text-align: center;
+	color: #E7E7E7;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+}
+
+p
+{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+button
+{
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #E7E7E7;
+  width: 45px;
+  outline: none;
+}
+
+.hideMe 
+{ 
+  display:none; 
+}
+
+
+/*Main Styles____________________*/
+#mainContent
+{
+  color: #ffffff;
+
+  text-align: left;
+
+  margin-top: 50px;
+  margin-right: 50px;
+  float: right;
+  background-color: #c82e27;
+  width: 450px;
+  padding: 25px 25px 50px 25px;
+}
+
+#mainContent h3
+{
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  width: 125%;
+  font-size: 36px;
+  border-bottom: 5px solid #fff;
+  padding-bottom: 5px;
+}
+
+.mainBGImg
+{
+  position: absolute;
+}
+
+.mainBGImg img
+{
+  width: 100%;
+  overflow: hidden;
+}
+
+#songTitle
+{
+  margin-top: 40px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#albumTitle
+{
+  margin-top: -15px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#audioControls
+{
+  margin-top: 80px;
+}
+
+.bottomBar
+{
+  background-color: #c82e27;
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+.songText
+{
+  font-size: 30px;
+  text-align: right;
+}
+
+#mainContent h3
+{
+  color: #E7E7E7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.controls 
+{ 
+  margin-bottom:15px; 
+}
+
+.trkSelect
+{
+  margin-top: 20px;
+}
+
+/*All Button Styles____________________*/
+.showHideBtn
+{
+  text-align: center;
+  margin-top: -4px;
+}
+
+.showHideBtn button
+{
+  width: 150px;
+  padding: 5px 10px 5px 10px;
+  color: #3a3a3a;
+}
+
+#detected
+{
+  text-align: right;
+}
+
+#detect
+{
+  text-align: left;
+}
+
+#detect img
+{
+  margin-top: -10px;
+  width: 40px;
+}
+
+.refreshBtn
+{
+  text-align: center;
+  margin-top: -4px;
+}
+
+.refreshBtn button
+{
+  width: 150px;
+  padding: 5px 10px 5px 10px;
+  color: #3a3a3a;
+}
+
+#playButton
+{
+	margin-right: 20px;
+}
+
+#backButton
+{
+	width: 90px;
+}
+
+#backBtnImage
+{
+	width: 50%;
+}
+
+#forwardButton
+{
+	width: 90px;
+}
+
+#forwardBtnImage
+{
+	width: 50%;
+}
